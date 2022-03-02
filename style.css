@@ -149,3 +149,50 @@
 .main-content-top-navbar-lower button:hover {
   background-color: rgb(185, 122, 243);
 }
+
+.main-content-body {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  padding: 2rem 1rem;
+}
+
+.main-content-body-left {
+  grid-row: span 2;
+}
+
+.main-content-body-left h3 {
+  margin-bottom: 1rem;
+}
+
+.main-content-body-left .your-projects {
+  height: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 1.5rem;
+}
+
+.main-content-body-left .your-projects .your-project {
+  background-color: white;
+  border-left: 7px solid rgb(199, 199, 56);
+  border-radius: 7px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.your-project .your-project-text {
+  font-size: 0.8rem;
+  color: rgb(97, 88, 88);
+}
+
+.your-project .your-project-icons {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 1.3rem;
+}
